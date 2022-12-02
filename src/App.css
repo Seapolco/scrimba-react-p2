@@ -1,7 +1,51 @@
 
+* { 
+  margin:0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: "Poppins", sans-serif
+}
 
-h1 {
-  color:rebeccapurple;
+html, body,#root, .heroContainer {
+
+  height: 100%
+}
+
+.navbar {
+  display: relative;
+  z-index: 3;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding: 40px;  
+}
+
+.heroContainer {
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+}
+
+.heroImage {
+  display:grid;
+  justify-self: center;
+  width: 90%;
+  height:auto;
+  margin: 0 auto;
+}
+
+.heroText {
+  margin-top: 30px;
+}
+
+.heroHeader {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.description {
+  margin-top: 20px;
 }
 
 
