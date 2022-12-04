@@ -5,11 +5,14 @@ import Hero from './components/Hero';
 import Card from './components/Card';
 
 
+/// DB //////
+
 function App() {
 
     return (
         <>
         <Navbar />
+        <Hero />
         <Hero />
         <Card/>
         </>
