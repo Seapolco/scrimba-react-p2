@@ -1,6 +1,6 @@
 import React from 'react';
-import  swim from '../assets/katie.png';
-import star from '../assets/Star.svg';
+//import  swim from '../assets/katie.png';
+//import star from '../assets/Star.svg';
 
 
 
@@ -20,10 +20,10 @@ const Card = (props) => {
                             <img src={props.star}  alt="" className="starIcon" />
                             <p className="ratingAverage">{props.ratingAvg}</p>
                         </div>
-                        <p className="ratingCountCountry">{props.ratingCount}</p>
+                        <p className="ratingCountCountry">({props.ratingCount})  • USA </p>
                     </div>
                     <p className="cardDescription">{props.cardDescr}</p>
-                    <p className="cost"><b>{props.cost}</b> / person</p>
+                    <p className="cost">$<b>{props.cost}</b> / person</p>
                 </div>
             </div>
        </div> 

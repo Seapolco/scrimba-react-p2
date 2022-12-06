@@ -1,10 +1,10 @@
 import React from 'react';
-import heroImage from '../assets/hero.png';
+//import heroImage from '../assets/hero.png';
 
 const Hero = () => {
     return (
         <main className="heroContainer">
-            <img src={heroImage} alt="" className="heroImage" />
+            <img src="/images/hero.png" alt="" className="heroImage" />
             <div className="heroText">
                 <h1 className="heroHeader">Online Experiences</h1>
                 <p className="description">

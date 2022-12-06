@@ -51,6 +51,12 @@ html, body,#root {
 
 /*---------------CARD SECTION -----------------------------*/
 
+
+
+.cardsContainer {
+  display: flex;
+}
+
 .cardSection {
   padding: 20px 40px 20px 40px;
 }
@@ -73,6 +79,7 @@ html, body,#root {
 }
 
 .cardImage {
+  border-radius: 8px; 
   width: 176px;
   height: 235px;
 }
