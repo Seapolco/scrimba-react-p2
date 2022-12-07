@@ -7,23 +7,30 @@ import React from 'react';
 
 const Card = (props) => {
 
+    let badgeText
+    if (props.item.openSpots === 0) {
+        badgeText = "SOLD OUT"
+    } else if (props.item.location === "Online") {
+        badgeText = "ONLINE"
+    }
+
     return(
        <div className="cardSection">
             <div className="card">
                 <div className="cardImageContainer">
-                    <div className="availability">{props.avail}</div>
-                    <img src={props.image} alt="" className="cardImage" />
+                {badgeText && <div className="availability">{badgeText}</div>}
+                    <img src={props.item.coverImg} alt="" className="cardImage" />
                 </div>
                 <div className="cardText">
                     <div className="ratingCountyContainer">
                         <div className="starRating">
-                            <img src={props.star}  alt="" className="starIcon" />
-                            <p className="ratingAverage">{props.ratingAvg}</p>
+                            <img src="/images/Star.svg" alt="" className="starIcon" />
+                            <p className="ratingAverage">{props.item.stats.rating}</p>
                         </div>
-                        <p className="ratingCountCountry">({props.ratingCount})  • USA </p>
+                        <p className="ratingCountCountry">({props.item.stats.reviewCount})  • USA </p>
                     </div>
-                    <p className="cardDescription">{props.cardDescr}</p>
-                    <p className="cost">$<b>{props.cost}</b> / person</p>
+                    <p className="cardDescription">{props.item.title}</p>
+                    <p className="cost">$<b>{props.item.price}</b> / person</p>
                 </div>
             </div>
        </div> 

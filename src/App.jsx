@@ -12,14 +12,9 @@ import data from './data'
 
 function App() {
 
-    let cards = data.map((e) => {
-        return <Card avail={e.openSpots > 0 ? "Available" : "SOLD OUT"} 
-        image={`/images/${e.coverImg}`} 
-        star={'/images/Star.svg'}
-        ratingAvg={e.stats.rating}  
-        ratingCount={e.stats.reviewCount}
-        cardDescr={e.title}
-        cost={e.price} />
+    let cards = data.map((item,i) => {
+        console.log(item)
+        return <Card key={i} item={item} />
     })
 
     return (

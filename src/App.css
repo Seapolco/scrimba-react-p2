@@ -6,9 +6,15 @@
   font-family: "Poppins", sans-serif
 }
 
-html, body,#root {
+html {
+  height: 100%;
+  overflow: scroll;
+}
 
-  height: 100%
+body,#root {
+
+  
+  min-height: 100%;
 }
 
 .navbar {
@@ -19,6 +25,7 @@ html, body,#root {
   align-items: center;
   height: 70px;
   padding: 40px;  
+  min-width: 100%;
 }
 
 .heroContainer {
@@ -55,10 +62,11 @@ html, body,#root {
 
 .cardsContainer {
   display: flex;
+  padding-left: 30px;
 }
 
 .cardSection {
-  padding: 20px 40px 20px 40px;
+  padding: 20px 10px 20px 10px;
 }
 
 .cardImageContainer {
